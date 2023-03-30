@@ -1,0 +1,18 @@
+.card{
+  border: 2px solid black;
+  height: 300px;
+  width:200px;
+  padding: 20px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.media-player{
+  margin: 20px;
+}
+/* .card is calling the Episode.js component from  <div className="card">Episode: {props.title}</div> so you can modify its appearance */
+/* padding creates space between your border and the edge of page */
+
+/* we created a <div> container named "cards" around all of our <Episode /> commponent calls, so know we can modify the appearance of all the card elements. looks like: <div className="cards"> */
