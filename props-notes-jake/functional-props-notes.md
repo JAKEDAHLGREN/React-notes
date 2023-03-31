@@ -50,13 +50,13 @@ import MenuItem from "./components/MenuItem"
 
 const App = () => {
 
-  const [menu, setMenu] = useState({
-   { name: "burger", ordered: false},
+  const [menu, setMenu] = useState([
+   { name: "Burger", ordered: false},
    { name: "NY Hot Dogs", ordered: false},
    { name: "Chicken wings", ordered: false},
    { name: "Sushi", ordered: false},
    { name: "Coors Light", ordered: false},
-  })
+  ])
   return (
     <>
       <h1> Bravo Tailgait Party </h1>
@@ -236,6 +236,7 @@ const App = () => {
               menuItem={menuItem}
               orderMenuItem={orderMenuItem}
               key={index}
+              index={index}
               />
           )
         })}
